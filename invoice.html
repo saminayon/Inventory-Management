@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Invoice</title>
+        <style>
+            table{
+                width: 100%;}
+            .margin{
+                margin: 1.5cm 1.5cm;border: none;padding: 16px 32px;
+                text-align: center;
+                font-size: 15px;
+            }  
+            table,tr,td,th{
+                height: .8cm;
+                border: 2px solid rgb(134, 129, 129);
+                border-collapse: collapse;
+            }
+            .button {
+                background-color: #1f8f28;
+                border: none;
+                color: white;
+                padding: 8px 16px;
+                text-align: center;
+                font-size: 15px;
+                margin: 4px 2px;
+                opacity: 0.6;
+                transition: 0.5s;
+                display: inline-block;
+                text-decoration: none;
+                cursor: pointer;
+                }
+
+            .button:hover {opacity:1;}    
+        </style>
+    </head>
+    <body>
+        <div class="margin">
+            <table>
+                <tr style="margin-right: 1cm;">
+                    <td 
+                    colspan="5" style="text-align: right;font-size: 20px;height: 1.5cm;background-color: blanchedalmond;">INV-000149
+                    </td>
+                </tr>
+                <tr style="font-size: 16px;">
+                    <th>Date</th>
+                    <th>Payments</th>
+                    <th>Reference</th>
+                    <th>Payments Mode</th>
+                    <th>Amount</th>
+                </tr>
+                <tr>
+                    <td>13/03/2023</td>
+                    <td >59</td>
+                    <td >59</td>
+                    <td>Cash</td>
+                    <td>1000/=</td>
+                </tr>
+                <tr>
+                    <td colspan="5" style="text-align: right;"><button class="button">Edit</button></td>
+                </tr>
+            </table>
+        </div>
+        <div class="margin">
+            <table align="right" style="width: 50%;">
+                <tr>
+                    <td rowspan="2" style="text-align: left;">
+                        <address>Samin Yaser Ayon <br>Dhaka<br> Bangladesh</address>
+                    </td>
+                    <td colspan="2" style="text-align:right;"><h3>Invoice</h3></td>
+                </tr>
+                <tr  style=" text-align: right;">
+                    <td colspan="2">INV-000149 </td>
+                </tr>
+                <tr>
+                    <td colspan="3" style="text-align: right;">Balance Due : 0.00 (BDT)</td>
+                </tr>
+                <tr>
+                    <td rowspan="4">Bill to</td>
+                    <td>Invoice Date:</td>
+                    <td>13.06.2023</td>
+                </tr>
+                <tr>
+                    <td>Terms:</td>
+                    <td>Due on Receipt</td>
+                </tr>
+                <tr>
+                    <td>Due Date:</td>
+                    <td>13.03.2023</td>
+                </tr>
+                <tr>
+                    <td>P.O.#</td>
+                    <td>Dhaka-1215</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
