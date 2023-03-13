@@ -30,15 +30,23 @@
                 cursor: pointer;
                 }
 
-            .button:hover {opacity:1;}    
+            .button:hover {opacity:1;}  
+            .box{
+                width: 100%;
+                border: 10px solid rgb(131, 131, 131);
+                padding: 50px;
+                margin: auto;
+                background-color: rgb(238, 238, 238);
+                }  
         </style>
     </head>
     <body>
+    <div class="box">    
         <div class="margin">
             <table>
                 <tr style="margin-right: 1cm;">
                     <td 
-                    colspan="5" style="text-align: right;font-size: 20px;height: 1.5cm;background-color: blanchedalmond;">INV-000149
+                    colspan="5" style="text-align: right;font-size: 20px;height: 1.5cm; background-color: rgb(133, 133, 133);">INV-000149
                     </td>
                 </tr>
                 <tr style="font-size: 16px;">
@@ -91,15 +99,34 @@
                     <td>P.O.#</td>
                     <td>Dhaka-1215</td>
                 </tr>
-                <tr>
+                <tr style="border-style: hidden; border-top: 1px solid black;">
                     <td colspan="3"></td>
                 </tr>
             </table>
         </div>
-        <div>
-            <table>
-                <tr></tr>
-            </table>
-        </div>
+        <div class="margin">
+            <table style="border: 1px solid black;">
+                <tr style="background-color: rgb(133, 133, 133);">
+                    <td>#</td>
+                    <td>Iteams & Description</td>
+                    <td>Qty.</td>
+                    <td>Rate</td>
+                    <td>Amount</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Pant</td>
+                    <td>10</td>
+                    <td>200</td>
+                    <td>2000</td>
+                </tr>
+                <tr>
+                    <td colspan="5" align="right" style="border-style: hidden;border-top: 1px solid black;">
+                        <button class="button">Print Bill</button>
+                    </td>
+                </tr>
+            </table>    
+            </div>
+    </div>    
     </body>
 </html>
