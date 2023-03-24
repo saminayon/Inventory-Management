@@ -29,12 +29,17 @@ const productInfoObj={
     productName: 'Potato',
     productPrice: 30,
     productQuantity: 3,}
-function showproductinfo (){
-    console.log(`Product Name- ${productInfoObj.productName}
-Product Price- ${productInfoObj.productPrice}
-Product Quantity ${productInfoObj.productQuantity}`)
+    const productInfoObj1={
+        productName: 'Tomatato',
+        productPrice: 300,
+        productQuantity: 39,}
+function showproductinfo (a){
+    console.log(a)
+    console.log(`Product- ${a.productName}
+Product Price- ${a.Price}
+Product Quantity ${a.Quantity}`)
 
 }  
 //call function (output dekhte hole obossoi function call korte hobe)
-showproductinfo();  
+showproductinfo(productInfoObj1);  
 
