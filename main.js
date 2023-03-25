@@ -66,12 +66,18 @@ console.log(product2)
 //object theka property ber kore anbo
 //Product Name- ${a.productName} (Previous day)
 //Product Name- ${productName} (Today)
-const productInfoObj1={
+/*const productInfoObj1={
     productName: 'Potato',
     productPrice: 30,
     productQuantity: 3,}
     const {productName,productQuantity,productPrice}=productInfoObj1
     console.log(productName)
+
+ // Array theka property ber kore anar jonno   
+    const productinfoarray=['Potato',30,3]
+    const [name, price, Quantity]=productinfoarray
+    console.log(name)
+
 
 const productInfoObj2={
         productName: 'Tomato',
@@ -87,3 +93,19 @@ const product1= showproductinfo(productInfoObj1,'product1')
 const product2= showproductinfo(productInfoObj2, )
 console.log(product1)
 console.log(product2)
+*/
+
+//Function Vs Method
+const productInfoObj1={
+    productName: 'Potato',
+    productPrice: 30,
+    productQuantity: 3,
+    productAvailable: true,
+    showinfo:function(){
+        return`
+        ProductName-${productInfoObj1.productName}
+        ProductPrice-${productInfoObj1.productPrice}
+        `;
+     }
+}
+     console.log(productInfoObj1.showinfo())
