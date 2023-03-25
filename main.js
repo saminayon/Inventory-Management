@@ -40,6 +40,7 @@ Product Quantity ${productInfoObj.productQuantity}`)
 showproductinfo();  */
 
 //Day-3 23.03.2023
+/*
 const productInfoObj1={
     productName: 'Potato',
     productPrice: 30,
@@ -59,5 +60,30 @@ const product1= showproductinfo(productInfoObj1,'product1')
 const product2= showproductinfo(productInfoObj2, )
 console.log(product1)
 console.log(product2)
+*/
 
-//Day-4 25.03.2023
+//Day-4 25.03.2023 
+//object theka property ber kore anbo
+//Product Name- ${a.productName} (Previous day)
+//Product Name- ${productName} (Today)
+const productInfoObj1={
+    productName: 'Potato',
+    productPrice: 30,
+    productQuantity: 3,}
+    const {productName,productQuantity,productPrice}=productInfoObj1
+    console.log(productName)
+
+const productInfoObj2={
+        productName: 'Tomato',
+        productPrice: 50,
+        productQuantity: 3 ,}
+
+function showproductinfo({productName,productPrice,productQuantity}, productno){
+    return`${productno} Product Name- ${productName}
+                        Product Price- ${productPrice}
+                        Product Quantity ${productQuantity} kg`
+}
+const product1= showproductinfo(productInfoObj1,'product1')
+const product2= showproductinfo(productInfoObj2, )
+console.log(product1)
+console.log(product2)
