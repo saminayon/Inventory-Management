@@ -40,15 +40,24 @@ Product Quantity ${productInfoObj.productQuantity}`)
 showproductinfo();  */
 
 //Day-3 23.03.2023
-const productInfoObj={
+const productInfoObj1={
     productName: 'Potato',
     productPrice: 30,
     productQuantity: 3,}
 
-function showproductinfo(a){
-    console.log(`Product Name- ${a.productName}
-Product Price- ${a.productPrice}
-Product Quantity ${a.productQuantity}`)
-}
+const productInfoObj2={
+        productName: 'Tomato',
+        productPrice: 50,
+        productQuantity: 3 ,}
 
-showproductinfo(productInfoObj)
+function showproductinfo(a, productno){
+    return`${productno} Product Name- ${a.productName}
+Product Price- ${a.productPrice}
+Product Quantity ${a.productQuantity} kg`
+}
+const product1= showproductinfo(productInfoObj1,'product1')
+const product2= showproductinfo(productInfoObj2, )
+console.log(product1)
+console.log(product2)
+
+//Day-4 25.03.2023
