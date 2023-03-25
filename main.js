@@ -24,22 +24,31 @@ Product Price- ${productInfoObj.productPrice}
 Product Quantity ${productInfoObj.productQuantity}
 Is available`)*/
 
-//Use of function(multiple product nia kaj koar jonno)
+
+/*//Use of function(multiple product nia kaj koar jonno) 22.03.2023
 const productInfoObj={
     productName: 'Potato',
     productPrice: 30,
     productQuantity: 3,}
-    const productInfoObj1={
-        productName: 'Tomatato',
-        productPrice: 300,
-        productQuantity: 39,}
-function showproductinfo (a){
-    console.log(a)
-    console.log(`Product- ${a.productName}
-Product Price- ${a.Price}
-Product Quantity ${a.Quantity}`)
+function showproductinfo (){
+    console.log(`Product Name- ${productInfoObj.productName}
+Product Price- ${productInfoObj.productPrice}
+Product Quantity ${productInfoObj.productQuantity}`)
 
 }  
 //call function (output dekhte hole obossoi function call korte hobe)
-showproductinfo(productInfoObj1);  
+showproductinfo();  */
 
+//Day-3 23.03.2023
+const productInfoObj={
+    productName: 'Potato',
+    productPrice: 30,
+    productQuantity: 3,}
+
+function showproductinfo(a){
+    console.log(`Product Name- ${a.productName}
+Product Price- ${a.productPrice}
+Product Quantity ${a.productQuantity}`)
+}
+
+showproductinfo(productInfoObj)
