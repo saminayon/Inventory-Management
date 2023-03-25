@@ -40,8 +40,8 @@ Product Quantity ${productInfoObj.productQuantity}`)
 showproductinfo();  */
 
 //Day-3 23.03.2023
-/*
-const productInfoObj1={
+
+/*const productInfoObj1={
     productName: 'Potato',
     productPrice: 30,
     productQuantity: 3,}
@@ -92,8 +92,8 @@ function showproductinfo({productName,productPrice,productQuantity}, productno){
 const product1= showproductinfo(productInfoObj1,'product1')
 const product2= showproductinfo(productInfoObj2, )
 console.log(product1)
-console.log(product2)
-*/
+console.log(product2)*/
+
 
 //Function Vs Method video-13
 /*const productInfoObj1={
@@ -112,7 +112,7 @@ console.log(product2)
      */
 
 //video-14
-const product=[
+/*const product=[
     {
         productName: 'Potato',
         productPrice: 30,
@@ -134,7 +134,9 @@ function showproductinfo(product, productno)
                         Product Quantity ${product1.productQuantity} kg`
 }
 const productoutput= showproductinfo(product,'1.')
-console.log(productoutput)
+console.log(productoutput)*/
+
+//Video-15 (For loop while loop) 
 
 
 
