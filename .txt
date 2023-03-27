@@ -179,3 +179,65 @@ while(i<productinfoarray.length){
     console.log(productinfoarray[i]);
     i++;
 }   
+
+
+const product=[
+    {
+        productName: 'Potato',
+        productPrice: 30,
+        productQuantity: 3,},
+    {
+        productName: 'Tomato',
+        productPrice: 50, 
+        productQuantity: 10 ,}
+];
+/*function showproductinfo(product){
+let singleProduct='';
+    //{console.log(product)
+        //const[product1, product2]=product;
+        for (let index = 0; index < product.length; index++) {
+            singleProduct = product[index];
+            console.log(singleProduct);
+    // loop er moddhe console.log(singleProduct) korle 2ta oject e pabo        
+}
+console.log(singleProduct);
+// loop er bahire console.log(singleProduct) korle last object ta pabo
+return`Product Name- ${singleProduct.productName},
+                        Product Price- ${singleProduct.productPrice} Tk./kg,
+                        Product Quantity ${singleProduct.productQuantity} kg`
+//"singleProduct is not defined" cause singleProduct conts ta for loop {} er moddhhe ase.
+// sudhumatro for llop er moddhei access korte parbo.                        
+}
+const productoutput= showproductinfo(product);
+console.log(productoutput);
+*/ 
+//এখান থেকে আমরা একটাই অউতপুত পাবো। সমাধান নিচে-
+
+// solution
+const product=[
+    {
+        productName: 'Potato',
+        productPrice: 30,
+        productQuantity: 3,},
+    {
+        productName: 'Tomato',
+        productPrice: 50, 
+        productQuantity: 10 ,}
+];
+
+function showproductinfo(){
+    let singleProduct='';
+    for (let i = 0; i < product.length; i++) {
+       singleProduct+=`
+       productName - ${product[i].productName}
+       productQuantity - ${product[i].productQuantity}
+       productPrice - ${product[i].productPrice}
+       
+       `    
+    }
+    console.log(singleProduct)
+    return singleProduct;
+}
+const productout=showproductinfo(product);
+console.log(productout)
+

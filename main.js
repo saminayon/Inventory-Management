@@ -1,17 +1,23 @@
-//For Loop
-const productinfoarray=['Potato',30,3]
-    for (let i=0; i<productinfoarray.length; i+=1){
-        console.log(productinfoarray[i])
+const product=[
+    {
+        productName: 'Potato',
+        productPrice: 30,
+        productQuantity: 3,},
+    {
+        productName: 'Tomato',
+        productPrice: 50, 
+        productQuantity: 10 ,}
+];
+
+function showproductinfo(product){
+    let singleProduct='';
+    for (let i = 0; i < product.length; i++) {
+       singleProduct+=`
+       productName - ${product[i].productName}
+       productQuantity - ${product[i].productQuantity}
+       productPrice - ${product[i].productPricee}
+       `    
     }
-
-//While Loop
-let i=0;
-while(i<productinfoarray.length){
-    console.log(productinfoarray[i]);
-    i++;
-}   
-
-
-
-
- 
+    console.log(singleProduct)
+    return singleProduct;
+}
