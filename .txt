@@ -181,7 +181,8 @@ while(i<productinfoarray.length){
 }   
 
 
-const product=[
+-------------------------//Video-16----------------------------
+ const product=[
     {
         productName: 'Potato',
         productPrice: 30,
@@ -207,11 +208,12 @@ return`Product Name- ${singleProduct.productName},
                         Product Quantity ${singleProduct.productQuantity} kg`
 //"singleProduct is not defined" cause singleProduct conts ta for loop {} er moddhhe ase.
 // sudhumatro for llop er moddhei access korte parbo.                        
-}
+}}
 const productoutput= showproductinfo(product);
 console.log(productoutput);
 */ 
-//এখান থেকে আমরা একটাই অউতপুত পাবো। সমাধান নিচে-
+//অসুবিধা হল, এখান থেকে আমরা একটাই অউতপুত পাবো। 
+সমাধান নিচে-
 
 // solution
 const product=[
@@ -241,3 +243,22 @@ function showproductinfo(){
 const productout=showproductinfo(product);
 console.log(productout)
 
+-----Video 17, 18 & 19 Operatofa-rotate-180
+
+------//Logic and condition video-20 -------------------- 
+
+const productPrice=50;
+let freeshiping = false;
+let handpick = false;
+if(productPrice>=100){
+    freeshiping=true;
+}
+else if(productPrice>=50){
+    handpick=true;
+}
+else{
+     freeshiping = false;
+ handpick = false;
+}
+ console.log(freeshiping)
+ console.log(handpick)
