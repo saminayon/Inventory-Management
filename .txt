@@ -244,6 +244,8 @@ const productout=showproductinfo(product);
 console.log(productout)
 
 -----Video 17, 18 & 19 Operatofa-rotate-180
+&&-And Operator
+||-Or operator
 
 ------//Logic and condition video-20 -------------------- 
 
