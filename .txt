@@ -262,3 +262,27 @@ else{
 }
  console.log(freeshiping)
  console.log(handpick)
+
+ ...........................Ternary Operator........................
+ ............handpick= productPrice>=60 && productPrice<99 ? true : false;...
+ const productPrice=50;
+let freeshiping = false;
+let handpick = false;
+let delivaryCharge = false;
+// if(productPrice>=100){
+//     freeshiping=true;
+// }
+// else if(productPrice>=50){
+//     handpick=true;
+// }
+// else{
+//      freeshiping = false;
+//  handpick = false;
+// }
+freeshiping= productPrice>=100 ? true : false;
+handpick= productPrice>=60 && productPrice<99 ? true : false;
+delivaryCharge= productPrice<=60? true : false;
+ console.log(freeshiping)
+ console.log(handpick)
+ console.log(delivaryCharge)
+
