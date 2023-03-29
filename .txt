@@ -351,3 +351,76 @@ switch(productPrice){
  ববহার করতে হবে।
 
  .................. Switch statement (Video 25)..................
+
+ const productPrice=150;
+let freeshiping = false;
+let handpick = false;
+let delivaryCharge = false;
+
+switch(productPrice){
+    case productPrice>=100 && productPrice:
+    // --true && true 
+    // >true
+    // --true && 'Hello'
+    // >"Hello"
+    // --true && 100
+    // >100
+
+        freeshiping=true;
+        handpick=false;
+        delivaryCharge = false;
+        break;
+    case productPrice>=50 && productPrice:
+        freeshiping=false;
+        handpick=true;
+        delivaryCharge = false;
+        break;
+    default:
+        freeshiping=false;
+        handpick=false;
+        delivaryCharge = true;
+    }
+ console.log(freeshiping)
+ console.log(handpick)
+ console.log(delivaryCharge)
+
+
+
+ ..................................Video-26.......................
+ const text= 'My name is ayon';
+
+//finding length......
+console.log(text.length);// 15
+
+//finding char / elememt..........
+console.log(text[0],text[1],text[2]);// M y
+
+//Finding Char. by index........
+console.log(text.charAt(5));//m
+
+//finding index by char........
+console.log(text.indexOf('m'));//5
+
+//uppercase.....
+console.log(text.toUpperCase());
+console.log(text.toLowerCase());
+
+//Wrong.........
+console.log(text.toLowerCase);
+
+//check wherher text is include or not........
+console.log(text.includes('M'));//true
+
+//trim space............
+const a=text.trimStart();
+console.log(a.length)
+console.log(a) //My name is ayon
+
+//pulling out text..........
+console.log(text.slice(0, 5)) //My na
+
+//concat.........
+console.log(text.concat( ' !')) //My name is ayon!
+
+//converting/ creating array fron a string......
+console.log(text.split(' ')) //['My', 'name', 'is', 'ayon']
