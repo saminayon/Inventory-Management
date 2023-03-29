@@ -424,3 +424,37 @@ console.log(text.concat( ' !')) //My name is ayon!
 
 //converting/ creating array fron a string......
 console.log(text.split(' ')) //['My', 'name', 'is', 'ayon']
+
+....................... Array property & Method (Video-27) ..............
+
+const arr=['My', 'name', 'is', 'ayon'];
+console.log(arr.length); //4
+console.log(arr[0]); //My
+
+//adding or removing elementd at thr end of the array
+console.log(arr.push( "yaser"))
+console.log(arr)
+console.log(arr.pop(''))
+console.log(arr)
+
+//adding or removing elementd at the begining of the array
+console.log(arr.unshift( "you", "Know"))
+console.log(arr)
+console.log(arr.shift( "you", "Know"))
+console.log(arr)
+
+// Accessing specific part of array
+console.log(arr.slice(0,2));
+console.log(arr.splice(0,2));
+//splice করলে অরিজিনাল array টা পরিবর্তন হবে
+console.log(arr) 
+
+//emty array
+arr.length=0
+console.log(arr) 
+
+
+................................. Array property & Method (Video-27)....................
+
+নির্দিষ্ট index এ কোন element add করতে হলে আমাকে অবশ্যই splice use করতে হবে
+সমস্যা হল splice করলে main array change হইয়ে জাই।
