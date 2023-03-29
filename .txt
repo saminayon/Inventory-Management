@@ -265,8 +265,10 @@ else{
  console.log(freeshiping)
  console.log(handpick)
 
+
  ...........................Ternary Operator........................
  ............handpick= productPrice>=60 && productPrice<99 ? true : false;...
+ 
  const productPrice=50;
 let freeshiping = false;
 let handpick = false;
@@ -288,3 +290,20 @@ delivaryCharge= productPrice<=60? true : false;
  console.log(handpick)
  console.log(delivaryCharge)
 
+
+
+.................. String to number convertion (coercion) Video 22.................
++'1' (String)= (Number) 1 <Shortcut
+
+
+..................Video 23 (false valur)...............
+Boolean(false) -false
+Boolean(null) -false
+Boolean(undefined) -false
+Boolean(Nan) -false
+Boolean(0) -false
+Boolean('') -false
+
+## Eigula chara sokol valur True hobe ##
+
+................... Switch statement (Video 24)..................
