@@ -1,3 +1,5 @@
+https://www.youtube.com/watch?v=CY8ZD0pl_MI&list=PLyrs5AgsUPcXhDGQ02G13cdp5Ts7jHR5k&index=25
+
 //Use of Array
 /*const productinfo=['Potato',30,3]
 //Accessing properties
@@ -297,6 +299,7 @@ delivaryCharge= productPrice<=60? true : false;
 
 
 ..................Video 23 (false valur)...............
+
 Boolean(false) -false
 Boolean(null) -false
 Boolean(undefined) -false
@@ -307,3 +310,44 @@ Boolean('') -false
 ## Eigula chara sokol valur True hobe ##
 
 ................... Switch statement (Video 24)..................
+
+const productPrice=100;
+let freeshiping = false;
+let handpick = false;
+let delivaryCharge = false;
+//  if(' '){
+//      freeshiping=true;
+//  }
+//  else if(productPrice>=50){
+//      handpick=true;
+//  }
+//  else{
+//       freeshiping = false;
+//   handpick = false;
+//  }
+switch(productPrice){
+    case 100:
+        freeshiping=true;
+        handpick=false;
+        delivaryCharge = false;
+        break;
+    case 50:
+        freeshiping=false;
+        handpick=true;
+        delivaryCharge = false;
+        break;
+    case 40:
+        freeshiping=false;
+        handpick=false;
+        delivaryCharge = true;
+    }
+ console.log(freeshiping)
+ console.log(handpick)
+ console.log(delivaryCharge)
+
+ কখন ব্যবহার করব?
+ -- যখন statement ছোট থাকবে।
+ সমস্যা- switch statement এ আমরা range ব্যবহার করতে পারব না। Eaxct value
+ ববহার করতে হবে।
+
+ .................. Switch statement (Video 25)..................
