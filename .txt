@@ -309,7 +309,10 @@ Boolean('') -false
 
 ## Eigula chara sokol valur True hobe ##
 
-................... Switch statement (Video 24)..................
+....
+
+
+............... Switch statement (Video 24)..................
 
 const productPrice=100;
 let freeshiping = false;
@@ -350,7 +353,11 @@ switch(productPrice){
  সমস্যা- switch statement এ আমরা range ব্যবহার করতে পারব না। Eaxct value
  ববহার করতে হবে।
 
+
+
+
  .................. Switch statement (Video 25)..................
+
 
  const productPrice=150;
 let freeshiping = false;
@@ -386,7 +393,10 @@ switch(productPrice){
 
 
 
+
+
  ...................String property & Method (Video-26).......................
+ 
  const text= 'My name is ayon';
 
 //finding length......
@@ -425,7 +435,12 @@ console.log(text.concat( ' !')) //My name is ayon!
 //converting/ creating array fron a string......
 console.log(text.split(' ')) //['My', 'name', 'is', 'ayon']
 
+
+
+
+
 ....................... Array property & Method (Video-27) ..............
+
 
 const arr=['My', 'name', 'is', 'ayon'];
 console.log(arr.length); //4
@@ -454,6 +469,9 @@ arr.length=0
 console.log(arr) 
 
 
+
+
+
 .................... Inserting array iteam by index (Video-28)....................
 
 নির্দিষ্ট index এ কোন element add করতে হলে আমাকে অবশ্যই splice use করতে হবে
@@ -475,6 +493,10 @@ console.log(arr)
 ///arr.slice(2) (...)ছাড়া output = ['Myself',['is', 'ayon']]
 
 
+
+
+
+
 .................... Spread Operator (...) (Video-29)....................
 
 const arr1=['My', 'name', 'is', 'ayon'];
@@ -483,6 +505,10 @@ const arr3=arr1.concat('and',arr2);
 console.log(arr3);
 const arr4=[...arr1, 'and',...arr2];
 console.log(arr4);
+
+
+
+
 
 ..................... Rest Vs Spread Operator (...) (Video-30)....................
 
@@ -508,4 +534,84 @@ const product={
 const {productName,...restvalue2}=product;
 console.log(productName,restvalue2)
 
+
+
+
+
 ..................... For each loop (...) (Video-31)....................
+
+
+// const arr=['I', 'Love', 'Programming']
+// for (let index = 0; index < arr.length; index++) {
+//     a=(arr[index]);
+//     console.log(a);
+//     }
+    
+
+// console.log(arr);
+
+// const text='I love Programming';
+// for (let index = 0; index < text.length; index++) {
+//     console.log(text[index]);
+//     }
+
+//For each loop for Array
+
+const arr=['I', 'Love', 'Programming']
+arr.forEach(function (ele, index, arr)//1st persmiter (ele) element bujhabe
+                                    // 2nd persmiter (index) index bujhabe
+                                   //3rd persmiter (arr) array bujhabe
+{
+    console.log(index, ele,arr)
+})
+
+
+
+
+..................... For in loop & for of loop (Video-32)....................
+ 
+
+ //Call back function কি ??
+ arr.forEach(function (el)){}
+ // for each হলো একটা function/ Method . এই for each function টা আর একটা function কে কল করছে,
+ // তাই একে call back বলে
+
+ // const arr=['I', 'Love', 'Programming']
+// for (let index = 0; index < arr.length; index++) {
+//     a=(arr[index]);
+//     console.log(a);
+//     }
+    
+
+// console.log(arr);
+
+// const text='I love Programming';
+// for (let index = 0; index < text.length; index++) {
+//     console.log(text[index]);
+//     }
+
+//For each loop for Array
+const arr=['I', 'Love', 'Programming']
+arr.forEach(function (ele)
+{
+    console.log(ele)
+})
+// For Of Loop
+for (let ele of arr) {
+    console.log(ele)
+}
+
+//For in loop for object
+const product={
+    productName: 'Potato',
+    productPrice: 30,
+    productQuantity: 3,}
+    for (const ele in product) {
+      console.log(product.productName) // Potato, Potato, Potato
+      console.log(product[ele]) //Potato, 30, 3
+      //(product.ele) দিলে undefined আসে।
+      //console.log বুঝে না যে এটা object এর element না কি।
+      // ele ekta variable
+      //তাই (product[ele]) এভাবে লিখতে হবে।
+        };
+    
