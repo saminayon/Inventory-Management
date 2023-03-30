@@ -245,6 +245,8 @@ function showproductinfo(){
 const productout=showproductinfo(product);
 console.log(productout)
 
+
+
 -----Video 17, 18 & 19 Operatofa-rotate-180
 &&-And Operator
 ||-Or operator
@@ -558,9 +560,12 @@ console.log(productName,restvalue2)
 //For each loop for Array
 
 const arr=['I', 'Love', 'Programming']
-arr.forEach(function (ele, index, arr)//1st persmiter (ele) element bujhabe
-                                    // 2nd persmiter (index) index bujhabe
-                                   //3rd persmiter (arr) array bujhabe
+arr.forEach(function (ele, index, arr)
+
+//1st persmiter (ele) element bujhabe
+// 2nd persmiter (index) index bujhabe
+//3rd persmiter (arr) array bujhabe
+
 {
     console.log(index, ele,arr)
 })
@@ -591,17 +596,21 @@ arr.forEach(function (ele, index, arr)//1st persmiter (ele) element bujhabe
 //     }
 
 //For each loop for Array
+
 const arr=['I', 'Love', 'Programming']
 arr.forEach(function (ele)
 {
     console.log(ele)
 })
+
+
 // For Of Loop
 for (let ele of arr) {
     console.log(ele)
 }
 
-//For in loop for object
+
+//For in loop for object ,not recomanded for array
 const product={
     productName: 'Potato',
     productPrice: 30,
@@ -615,3 +624,63 @@ const product={
       //তাই (product[ele]) এভাবে লিখতে হবে।
         };
     
+
+
+    .................... For each loop & for of loop (Video-33)....................
+
+const product=[
+    {
+        productName: 'Potato',
+        productPrice: 30,
+        productQuantity: 3,},
+    {
+        productName: 'Tomato',
+        productPrice: 50, 
+        productQuantity: 10 ,}
+];
+
+function showproductinfo(){
+    let a='Products List';
+    // plain for loop (Time consumeing)
+    // for (let i = 0; i < product.length; i++) {
+    //    singleProduct+=`
+    //    productName - ${product[i].productName}
+    //    productQuantity - ${product[i].productQuantity}
+    //    productPrice - ${product[i].productPrice}
+     //       `    
+    // }
+
+//We will try using for each loop
+//     product.forEach(function(ele) {
+        
+        
+//         a+=`
+//        productName - ${ele.productName}
+//        productQuantity - ${ele.productQuantity}
+//        productPrice - ${ele.productPrice}
+//        `    
+//     });
+//     return a;
+// }
+// const productout=showproductinfo(product);
+// console.log(productout)
+
+//We will try using for of loop
+for (let b of product) {
+    a+=`
+       productName - ${b.productName}
+       productQuantity - ${b.productQuantity}
+       productPrice - ${b.productPrice}
+       `    
+    };
+    return a;
+}
+    const productout=showproductinfo(product);
+console.log(productout)
+
+......Home Work.......
+
+
+
+    .............. Exercise solution reverse your name (Video-34)....................
+
