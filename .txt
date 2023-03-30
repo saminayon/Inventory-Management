@@ -454,7 +454,35 @@ arr.length=0
 console.log(arr) 
 
 
-................................. Array property & Method (Video-27)....................
+.................... Inserting array iteam by index (Video-28)....................
 
 নির্দিষ্ট index এ কোন element add করতে হলে আমাকে অবশ্যই splice use করতে হবে
 সমস্যা হল splice করলে main array change হইয়ে জাই।
+
+const arr=['My', 'name', 'is', 'ayon'];
+
+console.log(arr.splice(0,2,'Myself'));
+console.log(arr);
+//এভাবে করলে debug কিছু সমস্যা হয়। যেহেতু মেইন array change হয়
+// তাই problem identufy করতেও problem হয়।
+//তাই আমরা slice dia korar try korbo দিয়া করার try করব.
+
+console.log(arr.slice(2));
+const newArr=['Myself',...arr.slice(2) ];
+console.log(newArr);
+console.log(arr)
+///...arr.slice(2)(...) সহ output = ['Myself', 'is', 'ayon']
+///arr.slice(2) (...)ছাড়া output = ['Myself',['is', 'ayon']]
+
+
+.................... Spread Operator (...) (Video-29)....................
+
+const arr1=['My', 'name', 'is', 'ayon'];
+const arr2=['I', 'am', 'a', 'webdeveloper'];
+const arr3=arr1.concat('and',arr2);
+console.log(arr3);
+const arr4=[...arr1, 'and',...arr2];
+console.log(arr4);
+
+..................... Rest Vs Spread Operator (...) (Video-30)....................
+
