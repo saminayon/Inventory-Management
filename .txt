@@ -486,3 +486,26 @@ console.log(arr4);
 
 ..................... Rest Vs Spread Operator (...) (Video-30)....................
 
+const arr1=['My', 'name', 'is', 'Mr.Ayon.'];
+const arr2=['I', 'am', 'a', 'webdeveloper'];
+// array destructure
+
+// const [index1, index2, index3, index4]=arr1; // Output: My name is Mr.Ayon.
+// console.log(index1, index2, index3, index4);
+const [index1, ...restvalue]=arr1;
+console.log(index1,restvalue);// Output: My ['name', 'is', ' Mr.Ayon.']
+
+console.log(arr1[0]);
+console.log(arr1[1]);
+console.log(arr1[2]);
+console.log(arr1[3]);
+
+const product={
+        productName: 'Potato',
+        productPrice: 30,
+        productQuantity: 3,}
+//Object Destructue        
+const {productName,...restvalue2}=product;
+console.log(productName,restvalue2)
+
+..................... For each loop (...) (Video-31)....................
