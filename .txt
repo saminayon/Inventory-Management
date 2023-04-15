@@ -683,4 +683,12 @@ console.log(productout)
 
 
     .............. Exercise solution reverse your name (Video-34)....................
+const name= 'AYON';
+function reversename(){
+    console.log(name);
+ return name.split('').reverse().join('')
+}
+console.log(reversename(name));
 
+  .............. ExFirst Class Function (Video-35)....................
+ 
