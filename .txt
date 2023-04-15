@@ -816,8 +816,66 @@ for (let b of product) {
 console.log(showproductinfo(product))
 
 
-.............. Return Keyword (Video-37)....................
+.............. Return Keyword (Video-37,38) (In stock and Out of Stock)....................
 
+function greet(lan, name){
+if(lan==='en'){
+    return `Hello ${name}`
+}
+else{
+  return `Hola ${name}`
+}
+}
+console.log(greet('en','Ayon'))
+
+//Apply in main code
+
+const product=[
+    {
+        productName: 'Potato',
+        productPrice: 30,
+        productQuantity: 3,},
+    {
+        productName: 'Tomato',
+        productPrice: 50, 
+        productQuantity: 10 ,},
+    {
+        productName: 'Coke',
+        productPrice: 25, 
+        productQuantity: 100 ,},
+    {
+        productName: 'Pepsi',
+        productPrice: 25, 
+        productQuantity: 0 ,}        
+
+
+];
+
+const showproductinfo= product => {  // Short-Cut function
+    let singleProduct='Products List';
+
+for (let b of product) {
+    if(b.productQuantity >=1){
+    singleProduct+=`
+       productName - ${b.productName}
+       productQuantity - ${b.productQuantity}
+       productPrice - ${b.productPrice}
+       In stock
+       ` } 
+    else if(b.productQuantity<=0){
+        singleProduct+=`
+        productName - ${b.productName}
+        productQuantity - ${b.productQuantity}
+        productPrice - ${b.productPrice}
+        Out of stock
+        `  
+    }    
+    }
+        return(singleProduct)};
+
+//Turnary Operator Use kore short-cut a Kora jai
+
+console.log(showproductinfo(product))
 
 
 
