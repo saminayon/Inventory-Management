@@ -876,6 +876,11 @@ for (let b of product) {
 //Turnary Operator Use kore short-cut a Kora jai
 
 console.log(showproductinfo(product))
+**destructure
+**Turnary operator
+
+
+.............. Scope (Video-39)....................
 
 
 
