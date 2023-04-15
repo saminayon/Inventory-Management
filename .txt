@@ -690,5 +690,41 @@ function reversename(){
 }
 console.log(reversename(name));
 
-  .............. ExFirst Class Function (Video-35)....................
- 
+  .............. First Class Function (Video-35)....................
+  
+  
+//1.
+// function func(){
+//     console.log('bla..bla..')
+// }
+// func() //Function Call kora bujhai
+
+
+//2.
+// const func= function(){
+//     console.log('Output')
+// }
+// func()
+
+
+//3.
+
+// function outerFunc(){
+//     return function innerfunction(){
+//         console.log('Inner function Output')
+//     }
+// }
+// outerFunc()()   // একটা function এর মধ্যে আর একটা function থাকলে সেটা call করার জন্য
+
+
+//4.
+function outerFunc(a){
+    console.log(a())
+   
+}
+outerFunc(function (){
+    console.log('Inner function to be Called')
+})
+
+.............. Evoluation (Video-36)....................
+
