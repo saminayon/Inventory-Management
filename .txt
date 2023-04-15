@@ -654,26 +654,26 @@ function showproductinfo(){
 //     product.forEach(function(ele) {
         
         
-//         a+=`
+//         singleproduct=`
 //        productName - ${ele.productName}
 //        productQuantity - ${ele.productQuantity}
 //        productPrice - ${ele.productPrice}
 //        `    
 //     });
-//     return a;
+//     return singleproduct;
 // }
 // const productout=showproductinfo(product);
 // console.log(productout)
 
 //We will try using for of loop
 for (let b of product) {
-    a+=`
+    singleproduct=`
        productName - ${b.productName}
        productQuantity - ${b.productQuantity}
        productPrice - ${b.productPrice}
        `    
     };
-    return a;
+    return singleProduct;
 }
     const productout=showproductinfo(product);
 console.log(productout)
@@ -726,5 +726,91 @@ outerFunc(function (){
     console.log('Inner function to be Called')
 })
 
-.............. Evoluation (Video-36)....................
+.............. Function Evaluation (Video-36)....................
 
+
+1.
+// function func(){
+//     console.log('bla..bla..')
+// }
+// func();
+
+2.
+// const func= function(){
+//     console.log('bla..bla..')
+// }
+// func()
+
+3.
+//Arrow Function
+const func= () => {
+    //console.log('bla..bla..')
+    return 'bla..bla..'
+}
+// Opor er functioin ta shortcut a eivabe likhte pari
+// const func= () => 'bla..bla..' (Arrow function)same output asbe
+
+//func()
+console.log(func())
+
+Apply in main code
+
+const product=[
+    {
+        productName: 'Potato',
+        productPrice: 30,
+        productQuantity: 3,},
+    {
+        productName: 'Tomato',
+        productPrice: 50, 
+        productQuantity: 10 ,},
+    {
+        productName: 'Coke',
+        productPrice: 25, 
+        productQuantity: 100 ,},
+    {
+        productName: 'Pepsi',
+        productPrice: 25, 
+        productQuantity: 170 ,}        
+
+
+];
+
+const showproductinfo= product => {  // Short-Cut function
+    let singleProduct='Products List';
+    // plain for loop (Time consumeing)
+    // for (let i = 0; i < product.length; i++) {
+    //    singleProduct+=`
+    //    productName - ${product[i].productName}
+    //    productQuantity - ${product[i].productQuantity}
+    //    productPrice - ${product[i].productPrice}
+     //       `    
+    // }
+
+//We will try using for each loop
+//     product.forEach(function(ele) {
+        
+        
+//         singleproduct=`
+//        productName - ${ele.productName}
+//        productQuantity - ${ele.productQuantity}
+//        productPrice - ${ele.productPrice}
+//        `    
+//     });
+//     return singleproduct;
+// }
+// const productout=showproductinfo(product);
+// console.log(productout)
+
+//We will try using for of loop
+for (let b of product) {
+    singleProduct+=`
+       productName - ${b.productName}
+       productQuantity - ${b.productQuantity}
+       productPrice - ${b.productPrice}
+       `    
+    };
+    return singleProduct;
+}
+    
+console.log(showproductinfo(product))
